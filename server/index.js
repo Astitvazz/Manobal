@@ -21,7 +21,7 @@ app.post('/api/chat', async (req, res) => {
     const response = await axios.post(
       'https://openrouter.ai/api/v1/chat/completions',
       {
-        model: "mistralai/mistral-7b-instruct", // You can change this to another free model
+        model: "deepseek/deepseek-r1:free", // You can change this to another free model
         messages: [
           {
             role: "system",
